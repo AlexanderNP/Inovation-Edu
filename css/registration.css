@@ -1,0 +1,81 @@
+.mainReg {
+  padding: 3.44vw 0;
+}
+.containerReg {
+  max-width: 45.70vw;
+  padding: 0 0.78vw;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.regWrap{
+  position: relative;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: var(--main-shadow);
+  padding: 4.21vw 7.90vw;
+}
+
+.regLink{
+  position: absolute;
+  top: 2.60vw;
+  left: 2.60vw;
+}
+
+.regIcon{
+  width: 2.40vw;
+}
+
+.regTitle{
+  text-align: center;
+  font-size: 2.08vw;
+  font-weight: 700;
+  margin-bottom: 2vw;
+}
+
+.regForm {
+  display: flex;
+  flex-direction: column;
+}
+.formRegInput {
+  width: 100%;
+  font-size: 1.6vw;
+  border-radius: 0.52vw;
+  box-shadow: var(--main-shadow);
+  padding: 0.78vw 0 0.78vw 1.09vw;
+  margin-bottom: 1.67vw;
+}
+
+.formRegInput::placeholder, .formRegTextarea::placeholder{
+  color: #878787;
+  font-weight: 500;
+}
+
+.formRegTextarea{
+  padding: 1.04vw;
+  resize: none;
+  border-radius: 0.52vw;
+  box-shadow: var(--main-shadow);
+  font-size: 1.67vw;
+  margin-bottom: 1.67vw;
+}
+
+.formRegSelect{
+  color: #878787;
+  padding: 0.52vw 0 0.52vw 1.09vw;
+  border-radius: 0.52vw;
+  box-shadow: var(--main-shadow);
+  font-size: 1.67vw;
+  margin-bottom: 1.67vw;
+}
+
+
+.regBtn {
+  padding: 0.52vw 2.30vw;
+  font-size: 1.46vw;
+  color: #fff;
+  align-self: center;
+  border-radius: var(--border-size);
+  background: var(--main-color);
+  box-shadow: var(--main-shadow);
+}

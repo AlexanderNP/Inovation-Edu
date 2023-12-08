@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/registration.css">
+  <title>Registration</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="mainReg">
+      <div class="containerReg">
+        <div class="regWrap">
+          <a class="regLink" href="/authorization.html">
+            <img class="regIcon" src="images/icon-back.svg" alt="icon-back">
+          </a>
+          <h2 class="regTitle">Регистрация</h2>
+          <form class="regForm" action="">
+            <input class="formRegInput" name="firstName" type="text" required placeholder="Имя">
+            <input class="formRegInput" name="secondName" type="text" required placeholder="Фамилия">
+            <input class="formRegInput" name="login" type="text" required placeholder="Логин">
+            <input class="formRegInput" name="password" type="password" required placeholder="Пароль">
+            <input class="formRegInput" name="password" type="password" required placeholder="Повторите пароль">
+            <textarea class="formRegTextarea" name="message" cols="30" rows="10" placeholder="Напиши о себе"></textarea>
+            <select class="formRegSelect" name="interests">
+              <option value="" disabled selected hidden>Сфера интереса</option>
+              <option value="frontend">frontend</option>
+              <option value="frontend">frontend</option>
+              <option value="frontend">frontend</option>
+              <option value="frontend">frontend</option>
+            </select>
+            <select class="formRegSelect" name="stack">
+              <option value="" disabled selected hidden>Стек</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="JavaScript">JavaScript</option>
+            </select>
+            <select class="formRegSelect" name="company">
+              <option value="" disabled selected hidden>Интересные компании</option>
+              <option value="Shaligula">Шалигула</option>
+              <option value="Napoleon IT">Napoleon IT</option>
+            </select>
+            <button class="regBtn button">Зарегистрироваться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

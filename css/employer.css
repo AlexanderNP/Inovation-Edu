@@ -1,0 +1,108 @@
+.resultInner {
+  width: 62.50vw;
+  border-radius: 0.78vw;
+  box-shadow: 0px -1.35vw 0.78vw 0px #FFF inset, 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 1.30vw;
+}
+.resultTitleInner {
+  text-align: center;
+  font-size: 1.25vw;
+  font-weight: 700;
+  margin-bottom: 2vw;
+}
+.resultList {
+  max-height: 35vw;
+  padding-right: 1.30vw;
+  overflow-y: scroll;
+}
+.resultItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25vw;
+}
+.resultItem:last-child{
+  margin-bottom: 0;
+}
+
+.resultName {
+  font-size: 0.94vw;
+  font-weight: 800;
+  margin-bottom: 0.26vw;
+}
+.resultValue {
+  font-size: var(--fz-16px);
+  font-weight: 600;
+}
+
+.resultTitle{
+  color: rgba(0, 0, 0, 0.70);
+  font-size: 0.94vw;
+  font-weight: 800;
+}
+
+.resultLink {
+  color: #fff;
+  border-radius: 0.26vw;
+  background: var(--main-color);
+  font-weight: 800;
+  font-size: var(--fz-16px);
+  padding: 0.7vw 8.42vw;
+}
+.companyTestNew {
+  color: #fff;
+  border-radius: 0.26vw;
+  background: var(--main-color);
+  display: block;
+  padding: 0.7vw 0;
+  margin-bottom: 1.04vw;
+}
+.companyTestInner {
+  border-radius: 0.78vw;
+  box-shadow: 0px -1.35vw 0.78vw 0px #FFF inset, 0px 0px 0.21vw 0px rgba(0, 0, 0, 0.25);
+  padding: 1.25vw 1.25vw 0.26vw 1.25vw;
+  width: 22.81vw;
+}
+.companyTestInnerTitle {
+  text-align: center;
+  font-size: 1.25vw;
+  font-weight: 700;
+  margin-bottom: 1.30vw;
+}
+.companyTestList {
+  max-height: 33.5vw;
+  padding-right: 1.30vw;
+  overflow-y: scroll;
+}
+.companyTestItem {
+  margin-bottom: 0.78vw;
+}
+
+.companyTestItem:last-child{
+  margin-bottom: 0;
+}
+
+.companyTestDesk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.94vw;
+  font-weight: 800;
+  margin-bottom: 0.26vw;
+}
+
+.companyTestName {
+  color: rgba(0, 0, 0, 0.70);
+}
+.companyTestLast {
+  font-size: var(--fz-16px);
+  font-weight: 600;
+  margin-bottom: 0.26vw;
+}
+.companyTestBtn {
+  width: 100%;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.26vw;
+  padding: 0.56vw 0;
+}
