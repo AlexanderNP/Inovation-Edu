@@ -53,3 +53,49 @@
   background: var(--main-color);
   box-shadow: var(--main-shadow);
 }
+
+
+@media(max-width: 1000px){
+
+  .mainProfile {
+    padding-top: 0;
+    padding-bottom: 5.44vw;
+  }
+
+  .containerProfile {
+    max-width: none;
+    width: 90%;
+  }
+
+  .formProfileInput {
+    width: 100%;
+    font-size: 5.40vw;
+    border-radius: 1.52vw;
+    box-shadow: 0px 0px 2.99vw 0px rgba(0, 0, 0, 0.17);
+    padding: 2.78vw 0 2.78vw 4.09vw;
+    margin-bottom: 3.67vw;
+  }
+
+  .formProfileTextarea {
+    padding: 4.04vw;
+    border-radius: 1.52vw;
+    box-shadow: 0px 0px 2.99vw 0px rgba(0, 0, 0, 0.17);
+    font-size: 5.40vw;
+    margin-bottom: 3.67vw;
+  }
+
+  .formProfileSelect {
+    padding: 1.52vw 0 1.52vw 3.09vw;
+    border-radius: 1.52vw;
+    box-shadow: 0px 0px 2.99vw 0px rgba(0, 0, 0, 0.17);
+    font-size: 5.40vw;
+    margin-bottom: 3.67vw;
+  }
+
+  .profileBtn {
+    padding: 1.52vw 8.30vw;
+    font-size: 4.40vw;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 2.99vw 0px rgba(0, 0, 0, 0.17);
+  }
+}
