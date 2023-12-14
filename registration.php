@@ -61,8 +61,12 @@
     </div>
   </div>
 
-  <footer>
-    <a href="tel: +79087097177">Вы работодатель? Свяжитесь с нами!</a>
+  <footer class="footer">
+    <div class="containerReg">
+      <div class="footerInner">
+        <a class="footerLink" href="tel: +79087097177">Вы работодатель? Свяжитесь с нами!</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

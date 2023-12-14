@@ -53,6 +53,17 @@ include('time_diff2.php');
       </div>
     </header>
     <main class="main">
+    <div class="popUp" id="popup">
+        <div class="popUp-container">
+          <div class="popUp-body">
+            <button class="popUp-btn-close">
+              <img class="popUp-close-img" src="images/close-svgrepo-com.svg" alt="close">
+            </button>
+            <div class="Results" id="testResults">
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="mainWrapper">
           <section class="mainResult">
@@ -113,5 +124,8 @@ include('time_diff2.php');
       </div>
     </main>
   </div>
+
+  <script src="./js/popupCompany.js" defer></script>
+  <script src="./js/getResult.js" defer></script>
 </body>
 </html>
