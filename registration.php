@@ -1,3 +1,15 @@
+<?php
+
+  $error = false;
+
+  if(isset($_GET)) {
+    if(isset($_GET['error'])) {
+      $error = $_GET['error'];
+    }
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,40 +18,41 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/registration.css">
-  <title>Registration</title>
+  <title>Регистрация</title>
 </head>
 <body>
   <div class="wrapper">
     <div class="mainReg">
       <div class="containerReg">
         <div class="regWrap">
-          <a class="regLink" href="/authorization.html">
+          <a class="regLink" href="/authorization.php">
             <img class="regIcon" src="images/icon-back.svg" alt="icon-back">
           </a>
           <h2 class="regTitle">Регистрация</h2>
-          <form class="regForm" action="">
+          <?php
+            if($error) {
+              if($error == '01') echo '<p>Пользователь с таким логином уже существует!</p>';
+              else if($error == '02') echo '<p>Пароли не совпадают!</p>';
+            }
+          ?>
+          <form class="regForm" action="regform.php" method="POST">
             <input class="formRegInput" name="firstName" type="text" required placeholder="Имя">
             <input class="formRegInput" name="secondName" type="text" required placeholder="Фамилия">
             <input class="formRegInput" name="login" type="text" required placeholder="Логин">
             <input class="formRegInput" name="password" type="password" required placeholder="Пароль">
-            <input class="formRegInput" name="password" type="password" required placeholder="Повторите пароль">
+            <input class="formRegInput" name="password2" type="password" required placeholder="Повторите пароль">
             <textarea class="formRegTextarea" name="message" cols="30" rows="10" placeholder="Напиши о себе"></textarea>
             <select class="formRegSelect" name="interests">
               <option value="" disabled selected hidden>Сфера интереса</option>
               <option value="frontend">frontend</option>
-              <option value="frontend">frontend</option>
-              <option value="frontend">frontend</option>
-              <option value="frontend">frontend</option>
+              <option value="backend">backend</option>
+              <option value="manager">manager</option>
             </select>
             <select class="formRegSelect" name="stack">
               <option value="" disabled selected hidden>Стек</option>
               <option value="JavaScript">JavaScript</option>
-              <option value="JavaScript">JavaScript</option>
-            </select>
-            <select class="formRegSelect" name="company">
-              <option value="" disabled selected hidden>Интересные компании</option>
-              <option value="Shaligula">Шалигула</option>
-              <option value="Napoleon IT">Napoleon IT</option>
+              <option value="Python">Python</option>
+              <option value="Python">C#</option>
             </select>
             <button class="regBtn button">Зарегистрироваться</button>
           </form>
@@ -47,5 +60,9 @@
       </div>
     </div>
   </div>
+
+  <footer>
+    <a href="tel: +79087097177">Вы работодатель? Свяжитесь с нами!</a>
+  </footer>
 </body>
 </html>
