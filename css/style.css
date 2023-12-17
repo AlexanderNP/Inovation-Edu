@@ -298,6 +298,12 @@ select {
   color: var(--main-color);
   font-size: 0.83vw;
   font-weight: 800;
+  transition: all 0.2s ease-out;
+}
+
+.testLink:hover {
+  background-color: var(--main-color);
+  color: white;
 }
 
 .updateInner {
@@ -351,6 +357,12 @@ select {
   color: #fff;
   border-radius: 0.26vw;
   padding: 0.26vw 0;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.updateBtn:hover {
+  opacity: 0.9;
 }
 
 .footerInner{

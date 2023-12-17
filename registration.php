@@ -64,7 +64,7 @@
   <footer class="footer">
     <div class="containerReg">
       <div class="footerInner">
-        <a class="footerLink" href="tel: +79087097177">Вы работодатель? Свяжитесь с нами!</a>
+        <a class="footerLink" href="authCompany.php">Вы работодатель? <span style='color: #004394;'>Свяжитесь с нами!</span></a>
       </div>
     </div>
   </footer>

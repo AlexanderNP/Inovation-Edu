@@ -14,6 +14,10 @@
   display: block;
   background: var(--main-color);
   margin-bottom: 1.46vw;
+  transition: all 0.2s ease-out;
+}
+.constructLink:hover {
+  opacity: 0.9;
 }
 .constructForm {
   display: flex;
@@ -49,6 +53,12 @@
   display: block;
   background: var(--main-color);
   margin-bottom: 1.46vw;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.constructBtn:hover {
+  opacity: 0.9;
 }
 
 #submitBtn{
@@ -100,6 +110,11 @@
     display: block;
     background: var(--main-color);
     margin-bottom: 3.46vw;
+    transition: all 0.2s ease-out;
+  }
+
+  .constructLink:hover {
+    opacity: 0.9;
   }
 
   .constructForm {

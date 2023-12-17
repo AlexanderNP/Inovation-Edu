@@ -1,3 +1,32 @@
+<?php
+
+
+include('open_bd.php');
+session_start();
+
+if((!isset($_SESSION) || !isset($_SESSION['href'])) && (!isset($_GET) || !isset($_GET['href']))) {
+  $script = 'authorization.php';
+  header("Location: $script");
+}
+else if(isset($_SESSION['href'])) {
+  $href = $_SESSION['href'];
+}
+else {
+  $href = $_GET['href'];
+  $_SESSION['href'] = $href;
+}
+
+for($index = 0; $index < count($companys); $index++) {
+  if($href == $companys[$index]['href']) {
+    $company = $companys[$index];
+  }
+}
+
+include('time_diff.php');
+include('time_diff2.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +36,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/constructor.css">
-  <title>Конструткор тестов</title>
+  <title>Конструктор тестов</title>
 </head>
 
 <body>
@@ -16,9 +45,8 @@
       <div class="container">
         <div class="headerInner">
           <img src="images/icon-user.svg" alt="user" class="headerIconUser">
-          <a href="#" class="headerUser">
-            <!-- <p class="headerName"><?php echo $user['name'] . ' ' . $user['last_name']; ?></p>
-            <p class="headerCategory"><?php echo $user['stack']; ?></p> -->
+          <a href="employer.php" class="headerUser">
+            <p class="headerName"><?php echo $company['name']; ?></p>
           </a>
           <form action="exit.php" method="POST">
             <button class="headerBtnExit">
@@ -32,11 +60,11 @@
       <section class="mainConstruct">
         <div class="container">
           <div class="constructInner">
-            <a href="#" class="constructLink button">Вернуться назад</a>
-            <form action="" class="constructForm">
+            <a href="employer.php" class="constructLink button">Вернуться назад</a>
+            <form action="newTest.php" method="POST" class="constructForm">
               <label class="constructLabel">
                 Название теста
-                <input type="text" name="name" id="" class="constructInput">
+                <input required type="text" name="name" id="" class="constructInput">
               </label>
               <label class="constructLabel">
                 Сложность
@@ -52,7 +80,8 @@
                 <input type="date" name="date" id="" class="constructInput">
               </label>
               <div id="questionsContainer"></div>
-              <button id="submitBtn" class="constructBtn button hidden">Создать новый тест</button>
+              <?php echo '<input type="hidden" name="company" value="'.$company['name'].'">'; ?>
+              <button id="submitBtn" class="constructBtn button hidden">Опубликовать тест</button>
             </form>
             <div class="constructBtnWrap">
               <button class="constructBtn variantQuestion button" onclick="addQuestion('multipleChoice')">Добавить вопрос с вариантами</button>

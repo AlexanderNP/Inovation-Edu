@@ -1,8 +1,11 @@
 open_bd.php
 users.json
 quest.json
+queste.json
 userse.json
+company.json
 api
 sendQuest.php
 regform.php
 .vscode
+sendBack.php

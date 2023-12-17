@@ -15,7 +15,17 @@ function displayResults(results) {
       <p class="dataOpen">Дата открытия теста: ${results.open}</p>
       <ul class="questionList">
         ${results.quest.map(question => {
-          return `<li class="questionItem">Вопрос: ${question.text} Ответ: ${question.current_answer}</li>`
+
+          let string = `<br><li class="questionItem">Вопрос: ${question.text}</li>`;
+
+          if(question.answer) {
+            string += `<li class="questionItem">Ответ: ${question.answer}</li>`;
+          }
+          if(question.current_answer) {
+            string += `<li class="questionItem">Правильный ответ: ${question.current_answer}</li>`;
+          }
+
+          return string;
         }).join("")}
       </ul>
       <p class="resultValue">Результат: ${results.result}</p>

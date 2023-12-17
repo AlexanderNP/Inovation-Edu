@@ -16,7 +16,7 @@
       <div class="authСontainer">
         <div class="authBody company">
           <h2 class="authTitle">Обратная связь</h2>
-          <form action="" method='POST' class="authForm">
+          <form action="sendBack.php" method='POST' class="authForm">
             <input class="authInput" type="text" name="company" required placeholder="Название компании">
             <input class="authInput" type="text" name="name" required placeholder="Как к вам обращаться?">
             <input class="authInput" type="tel" name="tel" required placeholder="Номер телефона">

@@ -98,7 +98,7 @@ include('time_diff2.php');
             </div>
           </section>
           <section class="mainCompanyTest">
-            <a class="companyTestNew button" href="#">НОВЫЙ ТЕСТ</a>
+            <?php echo '<a class="companyTestNew button" href="constructor.php?href='.$href.'">НОВЫЙ ТЕСТ</a>'; ?>
             <div class="companyTestInner">
               <p class="companyTestInnerTitle">Ваши тесты</p>
                 <ul class="companyTestList">

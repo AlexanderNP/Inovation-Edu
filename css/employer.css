@@ -48,6 +48,11 @@
   font-weight: 800;
   font-size: var(--fz-16px);
   padding: 0.7vw 8.42vw;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.resultLink:hover {
+  opacity: 0.8;
 }
 .companyTestNew {
   color: #fff;
@@ -56,6 +61,11 @@
   display: block;
   padding: 0.7vw 0;
   margin-bottom: 1.04vw;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.companyTestNew:hover {
+  opacity: 0.9;
 }
 .companyTestInner {
   border-radius: 0.78vw;
