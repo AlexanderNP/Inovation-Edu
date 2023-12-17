@@ -1,0 +1,166 @@
+.mainConstruct {
+  padding: 2.86vw 0;
+}
+
+.constructInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.constructLink {
+  padding: 0.52vw 1.25vw;
+  border-radius: 0.26vw;
+  color: #fff;
+  display: block;
+  background: var(--main-color);
+  margin-bottom: 1.46vw;
+}
+.constructForm {
+  display: flex;
+  flex-direction: column;
+}
+.constructLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25vw;
+  font-weight: 500;
+}
+
+.constructInput {
+  margin-top: 0.52vw;
+  margin-bottom: 1.30vw;
+  padding: 0.6vw 1vw;
+  font-size: 1.25vw;
+  font-weight: 500;
+  width: 26.20vw;
+  border-radius: 0.52vw;
+  box-shadow: 0px 0px 0.99vw 0px rgba(0, 0, 0, 0.17);
+}
+
+.constructBtnWrap{
+  display: flex;
+}
+
+.constructBtn {
+  max-width: 12.34vw;
+  padding: 0.52vw 1.25vw;
+  border-radius: 0.26vw;
+  color: #fff;
+  display: block;
+  background: var(--main-color);
+  margin-bottom: 1.46vw;
+}
+
+#submitBtn{
+  max-width: none;
+  width: 26.20vw;
+}
+
+.variantQuestion{
+  margin-right: 1vw;
+}
+
+.hidden {
+  display: none;
+}
+
+.deleteBtn {
+  font-size: 0.73vw;
+  background-color: #ff3333;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  margin-left: 1.30vw;
+  border-radius: 0.26vw;
+  padding: 0.26vw 0.52vw;
+}
+
+/* смещения вправо для ответов */
+.indent {
+  margin-left: 2.60vw;
+}
+
+
+@media(max-width: 1000px){
+  .mainConstruct {
+    padding: 5.86vw 0;
+  }
+  
+  .constructInner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .constructLink {
+    padding: 1.52vw 3.25vw;
+    border-radius: 1.26vw;
+    color: #fff;
+    display: block;
+    background: var(--main-color);
+    margin-bottom: 3.46vw;
+  }
+
+  .constructForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .constructLabel {
+    display: flex;
+    flex-direction: column;
+    font-size: 4.25vw;
+    font-weight: 500;
+  }
+  
+  .constructInput {
+    margin-top: 1.52vw;
+    margin-bottom: 3.30vw;
+    padding: 1.6vw 3vw;
+    font-size: 4.25vw;
+    font-weight: 500;
+    width: 65.20vw;
+    border-radius: 1.52vw;
+    box-shadow: 0px 0px 2.99vw 0px rgba(0, 0, 0, 0.17);
+  }
+  
+  .constructBtnWrap{
+    display: flex;
+  }
+  
+  .constructBtn {
+    max-width: 40.34vw;
+    padding: 1.52vw 3.25vw;
+    border-radius: 1.26vw;
+    margin-bottom: 3.46vw;
+  }
+  
+  #submitBtn{
+    width: 65.20vw;
+  }
+  
+  .variantQuestion{
+    margin-right: 3vw;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .deleteBtn {
+    font-size: 1.73vw;
+    background-color: #ff3333;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    margin-left: 3.30vw;
+    border-radius: 1.26vw;
+    padding: 1.26vw 1.62vw;
+  }
+  
+  /* смещения вправо для ответов */
+  .indent {
+    margin-left: 5.60vw;
+  }
+}

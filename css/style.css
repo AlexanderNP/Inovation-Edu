@@ -27,6 +27,12 @@ html, body {
   line-height: normal;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .wrapper {
   min-height: 100%;
   width: 100%;

@@ -18,6 +18,11 @@
   border-radius: 0.78vw;
   box-shadow: 0px 0px 0.99vw 0px rgba(0, 0, 0, 0.17);
 }
+
+.company{
+  padding: 3vw 0;
+  height: 36.08vw;
+}
 .authTitle {
   font-weight: 700;
   font-size: 2.08vw;
@@ -67,6 +72,11 @@
     padding: 5.65vw 0 5.19vw 0;
     border-radius: 1.78vw;
     box-shadow: 0px 0px 2.99vw 0px rgba(0, 0, 0, 0.17);
+  }
+
+  .company{
+    padding: 6vw 0;
+    height: 110.08vw;
   }
 
   .authTitle {
